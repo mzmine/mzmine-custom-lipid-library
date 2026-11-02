@@ -1,0 +1,118 @@
+[
+  {
+    "name": "Diacylglycerophosphoglycerols",
+    "abbr": "PG",
+    "coreClass": "GLYCEROPHOSPHOLIPIDS",
+    "mainClass": "GLYCEROPHOSPHOGLYCEROLS",
+    "backBoneFormula": "C6H15O8P",
+    "chainTypes": [
+      "ACYL_CHAIN",
+      "ACYL_CHAIN"
+    ],
+    "fragmentationRules": [
+      {
+        "polarityType": "POSITIVE",
+        "ionizationType": "AMMONIUM",
+        "lipidFragmentationRuleType": "HEADGROUP_FRAGMENT_NL",
+        "lipidFragmentInformationLevelType": "SPECIES_LEVEL",
+        "molecularFormula": "C3H12O6NP",
+        "lipidFragmentationRuleRating": "MAJOR",
+        "relativeIntensityWeight": 100
+      },
+      {
+        "polarityType": "POSITIVE",
+        "ionizationType": "AMMONIUM",
+        "lipidFragmentationRuleType": "ACYLCHAIN_PLUS_FORMULA_FRAGMENT",
+        "lipidFragmentInformationLevelType": "MOLECULAR_SPECIES_LEVEL",
+        "molecularFormula": "C3H5O",
+        "lipidFragmentationRuleRating": "MAJOR",
+        "relativeIntensityWeight": 10
+      },
+      {
+        "polarityType": "POSITIVE",
+        "ionizationType": "AMMONIUM",
+        "lipidFragmentationRuleType": "TWO_ACYLCHAINS_PLUS_FORMULA_FRAGMENT",
+        "lipidFragmentInformationLevelType": "MOLECULAR_SPECIES_LEVEL",
+        "molecularFormula": "C3H3",
+        "lipidFragmentationRuleRating": "MAJOR",
+        "relativeIntensityWeight": 100
+      },
+      {
+        "polarityType": "NEGATIVE",
+        "ionizationType": "NEGATIVE_HYDROGEN",
+        "lipidFragmentationRuleType": "HEADGROUP_FRAGMENT",
+        "lipidFragmentInformationLevelType": "SPECIES_LEVEL",
+        "molecularFormula": "C6H14O8P-",
+        "lipidFragmentationRuleRating": "MAJOR",
+        "relativeIntensityWeight": 0
+      },
+      {
+        "polarityType": "NEGATIVE",
+        "ionizationType": "NEGATIVE_HYDROGEN",
+        "lipidFragmentationRuleType": "HEADGROUP_FRAGMENT",
+        "lipidFragmentInformationLevelType": "SPECIES_LEVEL",
+        "molecularFormula": "C3H6O5P-",
+        "lipidFragmentationRuleRating": "MAJOR",
+        "relativeIntensityWeight": 0
+      },
+      {
+        "polarityType": "NEGATIVE",
+        "ionizationType": "NEGATIVE_HYDROGEN",
+        "lipidFragmentationRuleType": "HEADGROUP_FRAGMENT",
+        "lipidFragmentInformationLevelType": "SPECIES_LEVEL",
+        "molecularFormula": "H2PO4-",
+        "lipidFragmentationRuleRating": "MAJOR",
+        "relativeIntensityWeight": 0
+      },
+      {
+        "polarityType": "NEGATIVE",
+        "ionizationType": "NEGATIVE_HYDROGEN",
+        "lipidFragmentationRuleType": "HEADGROUP_FRAGMENT",
+        "lipidFragmentInformationLevelType": "SPECIES_LEVEL",
+        "molecularFormula": "PO3-",
+        "lipidFragmentationRuleRating": "MAJOR",
+        "relativeIntensityWeight": 0
+      },
+      {
+        "polarityType": "NEGATIVE",
+        "ionizationType": "NEGATIVE_HYDROGEN",
+        "lipidFragmentationRuleType": "ACYLCHAIN_FRAGMENT",
+        "lipidFragmentInformationLevelType": "MOLECULAR_SPECIES_LEVEL",
+        "molecularFormula": "",
+        "lipidFragmentationRuleRating": "MAJOR",
+        "relativeIntensityWeight": 0
+      },
+      {
+        "polarityType": "NEGATIVE",
+        "ionizationType": "NEGATIVE_HYDROGEN",
+        "lipidFragmentationRuleType": "ACYLCHAIN_MINUS_FORMULA_FRAGMENT_NL",
+        "lipidFragmentInformationLevelType": "MOLECULAR_SPECIES_LEVEL",
+        "molecularFormula": "H2O",
+        "lipidFragmentationRuleRating": "MAJOR",
+        "relativeIntensityWeight": 0
+      },
+      {
+        "polarityType": "NEGATIVE",
+        "ionizationType": "NEGATIVE_HYDROGEN",
+        "lipidFragmentationRuleType": "ACYLCHAIN_FRAGMENT_NL",
+        "lipidFragmentInformationLevelType": "MOLECULAR_SPECIES_LEVEL",
+        "molecularFormula": "",
+        "lipidFragmentationRuleRating": "MAJOR",
+        "relativeIntensityWeight": 0
+      }
+    ],
+    "_meta": {
+      "id": "diacylglycerophosphoglycerols",
+      "source": "builtin",
+      "description": "Built-in mzmine lipid class PG. Use it as a template for your own classes.",
+      "authors": [
+        {
+          "name": "mzmine development team"
+        }
+      ],
+      "mzmineVersion": "4.11.2",
+      "license": "MIT",
+      "licenseUrl": "https://github.com/mzmine/mzmine/blob/master/LICENSE.txt"
+    }
+  }
+]

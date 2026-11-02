@@ -1,0 +1,33 @@
+[
+  {
+    "name": "Monoalkylglycerophosphates",
+    "abbr": "LPA",
+    "coreClass": "GLYCEROPHOSPHOLIPIDS",
+    "mainClass": "GLYCEROPHOSPHATES",
+    "backBoneFormula": "C3H9O6P",
+    "chainTypes": [
+      "ALKYL_CHAIN"
+    ],
+    "fragmentationRules": [
+      {
+        "polarityType": "NEGATIVE",
+        "ionizationType": "NEGATIVE_HYDROGEN",
+        "molecularFormula": "",
+        "relativeIntensityWeight": 0
+      }
+    ],
+    "_meta": {
+      "id": "monoalkylglycerophosphates",
+      "source": "builtin",
+      "description": "Built-in mzmine lipid class LPA. Use it as a template for your own classes.",
+      "authors": [
+        {
+          "name": "mzmine development team"
+        }
+      ],
+      "mzmineVersion": "4.11.2",
+      "license": "MIT",
+      "licenseUrl": "https://github.com/mzmine/mzmine/blob/master/LICENSE.txt"
+    }
+  }
+]

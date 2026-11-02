@@ -1,0 +1,39 @@
+[
+  {
+    "name": "Sulfoquinovosylmonoacylglycerols",
+    "abbr": "SQMG",
+    "coreClass": "GLYCEROLIPIDS",
+    "mainClass": "GLYCOSYLMONOACYLGLYCEROLS",
+    "backBoneFormula": "C9H18O10S",
+    "chainTypes": [
+      "ACYL_CHAIN"
+    ],
+    "fragmentationRules": [
+      {
+        "polarityType": "POSITIVE",
+        "ionizationType": "AMMONIUM",
+        "molecularFormula": "",
+        "relativeIntensityWeight": 0
+      },
+      {
+        "polarityType": "NEGATIVE",
+        "ionizationType": "NEGATIVE_HYDROGEN",
+        "molecularFormula": "",
+        "relativeIntensityWeight": 0
+      }
+    ],
+    "_meta": {
+      "id": "sulfoquinovosylmonoacylglycerols",
+      "source": "builtin",
+      "description": "Built-in mzmine lipid class SQMG. Use it as a template for your own classes.",
+      "authors": [
+        {
+          "name": "mzmine development team"
+        }
+      ],
+      "mzmineVersion": "4.11.2",
+      "license": "MIT",
+      "licenseUrl": "https://github.com/mzmine/mzmine/blob/master/LICENSE.txt"
+    }
+  }
+]

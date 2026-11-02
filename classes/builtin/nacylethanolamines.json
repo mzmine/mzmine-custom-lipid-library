@@ -1,0 +1,36 @@
+[
+  {
+    "name": "N-acyl ethanolamines",
+    "abbr": "NAE",
+    "coreClass": "FATTYACYLS",
+    "mainClass": "FATTYAMIDES",
+    "backBoneFormula": "C2H6O",
+    "chainTypes": [
+      "AMID_CHAIN"
+    ],
+    "fragmentationRules": [
+      {
+        "polarityType": "POSITIVE",
+        "ionizationType": "POSITIVE_HYDROGEN",
+        "lipidFragmentationRuleType": "PRECURSOR",
+        "lipidFragmentInformationLevelType": "SPECIES_LEVEL",
+        "molecularFormula": "",
+        "lipidFragmentationRuleRating": "MAJOR",
+        "relativeIntensityWeight": 0
+      }
+    ],
+    "_meta": {
+      "id": "nacylethanolamines",
+      "source": "builtin",
+      "description": "Built-in mzmine lipid class NAE. Use it as a template for your own classes.",
+      "authors": [
+        {
+          "name": "mzmine development team"
+        }
+      ],
+      "mzmineVersion": "4.11.2",
+      "license": "MIT",
+      "licenseUrl": "https://github.com/mzmine/mzmine/blob/master/LICENSE.txt"
+    }
+  }
+]

@@ -1,0 +1,64 @@
+[
+  {
+    "name": "N-acyl-lysophosphatidylethanolamine",
+    "abbr": "LNAPE",
+    "coreClass": "GLYCEROPHOSPHOLIPIDS",
+    "mainClass": "GLYCEROPHOSPHOETHANOLAMINES",
+    "backBoneFormula": "C5H13O6P",
+    "chainTypes": [
+      "ACYL_CHAIN",
+      "AMID_CHAIN"
+    ],
+    "fragmentationRules": [
+      {
+        "polarityType": "NEGATIVE",
+        "ionizationType": "NEGATIVE_HYDROGEN",
+        "lipidFragmentationRuleType": "HEADGROUP_FRAGMENT",
+        "lipidFragmentInformationLevelType": "SPECIES_LEVEL",
+        "molecularFormula": "C3H6O5P-",
+        "lipidFragmentationRuleRating": "MAJOR",
+        "relativeIntensityWeight": 0
+      },
+      {
+        "polarityType": "NEGATIVE",
+        "ionizationType": "NEGATIVE_HYDROGEN",
+        "lipidFragmentationRuleType": "ACYLCHAIN_FRAGMENT",
+        "lipidFragmentInformationLevelType": "MOLECULAR_SPECIES_LEVEL",
+        "molecularFormula": "",
+        "lipidFragmentationRuleRating": "MAJOR",
+        "relativeIntensityWeight": 0
+      },
+      {
+        "polarityType": "NEGATIVE",
+        "ionizationType": "NEGATIVE_HYDROGEN",
+        "lipidFragmentationRuleType": "ACYLCHAIN_FRAGMENT_NL",
+        "lipidFragmentInformationLevelType": "MOLECULAR_SPECIES_LEVEL",
+        "molecularFormula": "",
+        "lipidFragmentationRuleRating": "MAJOR",
+        "relativeIntensityWeight": 0
+      },
+      {
+        "polarityType": "NEGATIVE",
+        "ionizationType": "NEGATIVE_HYDROGEN",
+        "lipidFragmentationRuleType": "ACYLCHAIN_MINUS_FORMULA_FRAGMENT_NL",
+        "lipidFragmentInformationLevelType": "MOLECULAR_SPECIES_LEVEL",
+        "molecularFormula": "H2O",
+        "lipidFragmentationRuleRating": "MAJOR",
+        "relativeIntensityWeight": 0
+      }
+    ],
+    "_meta": {
+      "id": "nacyllysophosphatidylethanolamine",
+      "source": "builtin",
+      "description": "Built-in mzmine lipid class LNAPE. Use it as a template for your own classes.",
+      "authors": [
+        {
+          "name": "mzmine development team"
+        }
+      ],
+      "mzmineVersion": "4.11.2",
+      "license": "MIT",
+      "licenseUrl": "https://github.com/mzmine/mzmine/blob/master/LICENSE.txt"
+    }
+  }
+]

@@ -1,0 +1,36 @@
+[
+  {
+    "name": "Monoalkylglycerophosphoglycerols",
+    "abbr": "LPG",
+    "coreClass": "GLYCEROPHOSPHOLIPIDS",
+    "mainClass": "GLYCEROPHOSPHOGLYCEROLS",
+    "backBoneFormula": "C6H15O8P",
+    "chainTypes": [
+      "ALKYL_CHAIN"
+    ],
+    "fragmentationRules": [
+      {
+        "polarityType": "NEGATIVE",
+        "ionizationType": "NEGATIVE_HYDROGEN",
+        "lipidFragmentationRuleType": "HEADGROUP_FRAGMENT",
+        "lipidFragmentInformationLevelType": "SPECIES_LEVEL",
+        "molecularFormula": "C3H6O5P-",
+        "lipidFragmentationRuleRating": "MAJOR",
+        "relativeIntensityWeight": 0
+      }
+    ],
+    "_meta": {
+      "id": "monoalkylglycerophosphoglycerols",
+      "source": "builtin",
+      "description": "Built-in mzmine lipid class LPG. Use it as a template for your own classes.",
+      "authors": [
+        {
+          "name": "mzmine development team"
+        }
+      ],
+      "mzmineVersion": "4.11.2",
+      "license": "MIT",
+      "licenseUrl": "https://github.com/mzmine/mzmine/blob/master/LICENSE.txt"
+    }
+  }
+]

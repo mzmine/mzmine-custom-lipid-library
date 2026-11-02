@@ -1,0 +1,7 @@
+_site/
+__pycache__/
+created_files.txt
+submission_report.md
+pr_body.md
+comment.md
+.DS_Store

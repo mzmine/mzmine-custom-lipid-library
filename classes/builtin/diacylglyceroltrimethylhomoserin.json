@@ -1,0 +1,64 @@
+[
+  {
+    "name": "Diacylglyceroltrimethylhomoserin",
+    "abbr": "DGTS",
+    "coreClass": "GLYCEROLIPIDS",
+    "mainClass": "OTHERGLYCEROLIPIDS",
+    "backBoneFormula": "C10H21O5N",
+    "chainTypes": [
+      "ACYL_CHAIN",
+      "ACYL_CHAIN"
+    ],
+    "fragmentationRules": [
+      {
+        "polarityType": "POSITIVE",
+        "ionizationType": "POSITIVE_HYDROGEN",
+        "lipidFragmentationRuleType": "HEADGROUP_FRAGMENT",
+        "lipidFragmentInformationLevelType": "SPECIES_LEVEL",
+        "molecularFormula": "C10H22NO5+",
+        "lipidFragmentationRuleRating": "MAJOR",
+        "relativeIntensityWeight": 0
+      },
+      {
+        "polarityType": "POSITIVE",
+        "ionizationType": "POSITIVE_HYDROGEN",
+        "lipidFragmentationRuleType": "HEADGROUP_FRAGMENT",
+        "lipidFragmentInformationLevelType": "SPECIES_LEVEL",
+        "molecularFormula": "C7H14NO2+",
+        "lipidFragmentationRuleRating": "MAJOR",
+        "relativeIntensityWeight": 0
+      },
+      {
+        "polarityType": "POSITIVE",
+        "ionizationType": "POSITIVE_HYDROGEN",
+        "lipidFragmentationRuleType": "ACYLCHAIN_FRAGMENT_NL",
+        "lipidFragmentInformationLevelType": "MOLECULAR_SPECIES_LEVEL",
+        "molecularFormula": "",
+        "lipidFragmentationRuleRating": "MAJOR",
+        "relativeIntensityWeight": 0
+      },
+      {
+        "polarityType": "POSITIVE",
+        "ionizationType": "POSITIVE_HYDROGEN",
+        "lipidFragmentationRuleType": "ACYLCHAIN_MINUS_FORMULA_FRAGMENT_NL",
+        "lipidFragmentInformationLevelType": "MOLECULAR_SPECIES_LEVEL",
+        "molecularFormula": "H2O",
+        "lipidFragmentationRuleRating": "MAJOR",
+        "relativeIntensityWeight": 0
+      }
+    ],
+    "_meta": {
+      "id": "diacylglyceroltrimethylhomoserin",
+      "source": "builtin",
+      "description": "Built-in mzmine lipid class DGTS. Use it as a template for your own classes.",
+      "authors": [
+        {
+          "name": "mzmine development team"
+        }
+      ],
+      "mzmineVersion": "4.11.2",
+      "license": "MIT",
+      "licenseUrl": "https://github.com/mzmine/mzmine/blob/master/LICENSE.txt"
+    }
+  }
+]

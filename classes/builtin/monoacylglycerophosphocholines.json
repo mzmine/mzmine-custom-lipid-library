@@ -1,0 +1,81 @@
+[
+  {
+    "name": "Monoacylglycerophosphocholines",
+    "abbr": "LPC",
+    "coreClass": "GLYCEROPHOSPHOLIPIDS",
+    "mainClass": "PHOSPHATIDYLCHOLINE",
+    "backBoneFormula": "C8H20O6PN",
+    "chainTypes": [
+      "ACYL_CHAIN"
+    ],
+    "fragmentationRules": [
+      {
+        "polarityType": "POSITIVE",
+        "ionizationType": "POSITIVE_HYDROGEN",
+        "lipidFragmentationRuleType": "HEADGROUP_FRAGMENT",
+        "lipidFragmentInformationLevelType": "SPECIES_LEVEL",
+        "molecularFormula": "C5H15NO4P+",
+        "lipidFragmentationRuleRating": "MAJOR",
+        "relativeIntensityWeight": 0
+      },
+      {
+        "polarityType": "POSITIVE",
+        "ionizationType": "SODIUM",
+        "lipidFragmentationRuleType": "HEADGROUP_FRAGMENT",
+        "lipidFragmentInformationLevelType": "SPECIES_LEVEL",
+        "molecularFormula": "C3H9N+",
+        "lipidFragmentationRuleRating": "MAJOR",
+        "relativeIntensityWeight": 0
+      },
+      {
+        "polarityType": "POSITIVE",
+        "ionizationType": "SODIUM",
+        "lipidFragmentationRuleType": "ACYLCHAIN_MINUS_FORMULA_FRAGMENT_NL",
+        "lipidFragmentInformationLevelType": "MOLECULAR_SPECIES_LEVEL",
+        "molecularFormula": "H2O",
+        "lipidFragmentationRuleRating": "MAJOR",
+        "relativeIntensityWeight": 0
+      },
+      {
+        "polarityType": "NEGATIVE",
+        "ionizationType": "FORMATE",
+        "lipidFragmentationRuleType": "ACYLCHAIN_FRAGMENT",
+        "lipidFragmentInformationLevelType": "MOLECULAR_SPECIES_LEVEL",
+        "molecularFormula": "",
+        "lipidFragmentationRuleRating": "MAJOR",
+        "relativeIntensityWeight": 0
+      },
+      {
+        "polarityType": "NEGATIVE",
+        "ionizationType": "ACETATE",
+        "lipidFragmentationRuleType": "ACYLCHAIN_FRAGMENT",
+        "lipidFragmentInformationLevelType": "MOLECULAR_SPECIES_LEVEL",
+        "molecularFormula": "",
+        "lipidFragmentationRuleRating": "MAJOR",
+        "relativeIntensityWeight": 0
+      },
+      {
+        "polarityType": "NEGATIVE",
+        "ionizationType": "ACETATE",
+        "lipidFragmentationRuleType": "HEADGROUP_FRAGMENT_NL",
+        "lipidFragmentInformationLevelType": "SPECIES_LEVEL",
+        "molecularFormula": "C3H6O2",
+        "lipidFragmentationRuleRating": "MAJOR",
+        "relativeIntensityWeight": 0
+      }
+    ],
+    "_meta": {
+      "id": "monoacylglycerophosphocholines",
+      "source": "builtin",
+      "description": "Built-in mzmine lipid class LPC. Use it as a template for your own classes.",
+      "authors": [
+        {
+          "name": "mzmine development team"
+        }
+      ],
+      "mzmineVersion": "4.11.2",
+      "license": "MIT",
+      "licenseUrl": "https://github.com/mzmine/mzmine/blob/master/LICENSE.txt"
+    }
+  }
+]

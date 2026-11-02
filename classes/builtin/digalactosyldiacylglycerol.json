@@ -1,0 +1,109 @@
+[
+  {
+    "name": "Digalactosyldiacylglycerol",
+    "abbr": "DGDG",
+    "coreClass": "GLYCEROLIPIDS",
+    "mainClass": "GLYCOSYLDIACYLGLYCEROLS",
+    "backBoneFormula": "C15H28O13",
+    "chainTypes": [
+      "ACYL_CHAIN",
+      "ACYL_CHAIN"
+    ],
+    "fragmentationRules": [
+      {
+        "polarityType": "POSITIVE",
+        "ionizationType": "AMMONIUM",
+        "lipidFragmentationRuleType": "HEADGROUP_FRAGMENT_NL",
+        "lipidFragmentInformationLevelType": "SPECIES_LEVEL",
+        "molecularFormula": "C12H21O11",
+        "lipidFragmentationRuleRating": "MAJOR",
+        "relativeIntensityWeight": 0
+      },
+      {
+        "polarityType": "POSITIVE",
+        "ionizationType": "AMMONIUM",
+        "lipidFragmentationRuleType": "HEADGROUP_FRAGMENT_NL",
+        "lipidFragmentInformationLevelType": "SPECIES_LEVEL",
+        "molecularFormula": "C12H23O12",
+        "lipidFragmentationRuleRating": "MAJOR",
+        "relativeIntensityWeight": 0
+      },
+      {
+        "polarityType": "POSITIVE",
+        "ionizationType": "AMMONIUM",
+        "lipidFragmentationRuleType": "ACYLCHAIN_PLUS_FORMULA_FRAGMENT",
+        "lipidFragmentInformationLevelType": "MOLECULAR_SPECIES_LEVEL",
+        "molecularFormula": "C3H5O",
+        "lipidFragmentationRuleRating": "MAJOR",
+        "relativeIntensityWeight": 0
+      },
+      {
+        "polarityType": "NEGATIVE",
+        "ionizationType": "ACETATE",
+        "lipidFragmentationRuleType": "HEADGROUP_FRAGMENT",
+        "lipidFragmentInformationLevelType": "SPECIES_LEVEL",
+        "molecularFormula": "C15H25O12-",
+        "lipidFragmentationRuleRating": "MAJOR",
+        "relativeIntensityWeight": 0
+      },
+      {
+        "polarityType": "NEGATIVE",
+        "ionizationType": "ACETATE",
+        "lipidFragmentationRuleType": "HEADGROUP_FRAGMENT",
+        "lipidFragmentInformationLevelType": "SPECIES_LEVEL",
+        "molecularFormula": "C15H23O11-",
+        "lipidFragmentationRuleRating": "MAJOR",
+        "relativeIntensityWeight": 0
+      },
+      {
+        "polarityType": "NEGATIVE",
+        "ionizationType": "ACETATE",
+        "lipidFragmentationRuleType": "ACYLCHAIN_FRAGMENT",
+        "lipidFragmentInformationLevelType": "MOLECULAR_SPECIES_LEVEL",
+        "molecularFormula": "",
+        "lipidFragmentationRuleRating": "MAJOR",
+        "relativeIntensityWeight": 0
+      },
+      {
+        "polarityType": "NEGATIVE",
+        "ionizationType": "FORMATE",
+        "lipidFragmentationRuleType": "HEADGROUP_FRAGMENT",
+        "lipidFragmentInformationLevelType": "SPECIES_LEVEL",
+        "molecularFormula": "C15H25O12-",
+        "lipidFragmentationRuleRating": "MAJOR",
+        "relativeIntensityWeight": 0
+      },
+      {
+        "polarityType": "NEGATIVE",
+        "ionizationType": "FORMATE",
+        "lipidFragmentationRuleType": "HEADGROUP_FRAGMENT",
+        "lipidFragmentInformationLevelType": "SPECIES_LEVEL",
+        "molecularFormula": "C15H23O11-",
+        "lipidFragmentationRuleRating": "MAJOR",
+        "relativeIntensityWeight": 0
+      },
+      {
+        "polarityType": "NEGATIVE",
+        "ionizationType": "FORMATE",
+        "lipidFragmentationRuleType": "ACYLCHAIN_FRAGMENT",
+        "lipidFragmentInformationLevelType": "MOLECULAR_SPECIES_LEVEL",
+        "molecularFormula": "",
+        "lipidFragmentationRuleRating": "MAJOR",
+        "relativeIntensityWeight": 0
+      }
+    ],
+    "_meta": {
+      "id": "digalactosyldiacylglycerol",
+      "source": "builtin",
+      "description": "Built-in mzmine lipid class DGDG. Use it as a template for your own classes.",
+      "authors": [
+        {
+          "name": "mzmine development team"
+        }
+      ],
+      "mzmineVersion": "4.11.2",
+      "license": "MIT",
+      "licenseUrl": "https://github.com/mzmine/mzmine/blob/master/LICENSE.txt"
+    }
+  }
+]

@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: mzmine documentation on lipid annotation
+    url: https://mzmine.github.io/mzmine_documentation/module_docs/id_lipid_annotation/lipid-annotation.html
+    about: How lipid annotation and custom lipid classes work in mzmine.

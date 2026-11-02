@@ -1,0 +1,163 @@
+[
+  {
+    "name": "Hexosylceramides",
+    "abbr": "HexCer",
+    "coreClass": "SPHINGOLIPIDS",
+    "mainClass": "NEUTRALGLYCOSPHINGOLIPIDS",
+    "backBoneFormula": "C9H18O5",
+    "chainTypes": [
+      "SPHINGOLIPID_DI_HYDROXY_BACKBONE_CHAIN",
+      "AMID_CHAIN"
+    ],
+    "fragmentationRules": [
+      {
+        "polarityType": "POSITIVE",
+        "ionizationType": "POSITIVE_HYDROGEN",
+        "lipidFragmentationRuleType": "HEADGROUP_FRAGMENT_NL",
+        "lipidFragmentInformationLevelType": "SPECIES_LEVEL",
+        "molecularFormula": "H2O",
+        "lipidFragmentationRuleRating": "MINOR",
+        "relativeIntensityWeight": 0
+      },
+      {
+        "polarityType": "POSITIVE",
+        "ionizationType": "POSITIVE_HYDROGEN",
+        "lipidFragmentationRuleType": "HEADGROUP_FRAGMENT_NL",
+        "lipidFragmentInformationLevelType": "SPECIES_LEVEL",
+        "molecularFormula": "C6H10O5",
+        "lipidFragmentationRuleRating": "MAJOR",
+        "relativeIntensityWeight": 0
+      },
+      {
+        "polarityType": "POSITIVE",
+        "ionizationType": "POSITIVE_HYDROGEN",
+        "lipidFragmentationRuleType": "HEADGROUP_FRAGMENT_NL",
+        "lipidFragmentInformationLevelType": "SPECIES_LEVEL",
+        "molecularFormula": "C6H12O6",
+        "lipidFragmentationRuleRating": "MAJOR",
+        "relativeIntensityWeight": 0
+      },
+      {
+        "polarityType": "POSITIVE",
+        "ionizationType": "POSITIVE_HYDROGEN",
+        "lipidFragmentationRuleType": "SPHINGOLIPID_DI_HYDROXY_BACKBONE_CHAIN_MINUS_FORMULA_FRAGMENT",
+        "lipidFragmentInformationLevelType": "MOLECULAR_SPECIES_LEVEL",
+        "molecularFormula": "HO",
+        "lipidFragmentationRuleRating": "MINOR",
+        "relativeIntensityWeight": 0
+      },
+      {
+        "polarityType": "POSITIVE",
+        "ionizationType": "POSITIVE_HYDROGEN",
+        "lipidFragmentationRuleType": "SPHINGOLIPID_DI_HYDROXY_BACKBONE_CHAIN_MINUS_FORMULA_FRAGMENT",
+        "lipidFragmentInformationLevelType": "MOLECULAR_SPECIES_LEVEL",
+        "molecularFormula": "H3O2",
+        "lipidFragmentationRuleRating": "MINOR",
+        "relativeIntensityWeight": 0
+      },
+      {
+        "polarityType": "POSITIVE",
+        "ionizationType": "POSITIVE_HYDROGEN",
+        "lipidFragmentationRuleType": "SPHINGOLIPID_DI_HYDROXY_BACKBONE_CHAIN_MINUS_FORMULA_FRAGMENT",
+        "lipidFragmentInformationLevelType": "MOLECULAR_SPECIES_LEVEL",
+        "molecularFormula": "CH3O2",
+        "lipidFragmentationRuleRating": "MINOR",
+        "relativeIntensityWeight": 0
+      },
+      {
+        "polarityType": "NEGATIVE",
+        "ionizationType": "ACETATE",
+        "lipidFragmentationRuleType": "HEADGROUP_FRAGMENT_NL",
+        "lipidFragmentInformationLevelType": "SPECIES_LEVEL",
+        "molecularFormula": "C8H14O7",
+        "lipidFragmentationRuleRating": "MAJOR",
+        "relativeIntensityWeight": 0
+      },
+      {
+        "polarityType": "NEGATIVE",
+        "ionizationType": "ACETATE",
+        "lipidFragmentationRuleType": "AMID_CHAIN_MINUS_FORMULA_FRAGMENT",
+        "lipidFragmentInformationLevelType": "MOLECULAR_SPECIES_LEVEL",
+        "molecularFormula": "NH4",
+        "lipidFragmentationRuleRating": "MAJOR",
+        "relativeIntensityWeight": 0
+      },
+      {
+        "polarityType": "NEGATIVE",
+        "ionizationType": "ACETATE",
+        "lipidFragmentationRuleType": "AMID_CHAIN_PLUS_FORMULA_FRAGMENT",
+        "lipidFragmentInformationLevelType": "MOLECULAR_SPECIES_LEVEL",
+        "molecularFormula": "C2H",
+        "lipidFragmentationRuleRating": "MAJOR",
+        "relativeIntensityWeight": 0
+      },
+      {
+        "polarityType": "NEGATIVE",
+        "ionizationType": "ACETATE",
+        "lipidFragmentationRuleType": "SPHINGOLIPID_DI_HYDROXY_BACKBONE_CHAIN_MINUS_FORMULA_FRAGMENT",
+        "lipidFragmentInformationLevelType": "MOLECULAR_SPECIES_LEVEL",
+        "molecularFormula": "C2H8NO",
+        "lipidFragmentationRuleRating": "MAJOR",
+        "relativeIntensityWeight": 0
+      },
+      {
+        "polarityType": "NEGATIVE",
+        "ionizationType": "FORMATE",
+        "lipidFragmentationRuleType": "HEADGROUP_FRAGMENT_NL",
+        "lipidFragmentInformationLevelType": "SPECIES_LEVEL",
+        "molecularFormula": "C7H12O7",
+        "lipidFragmentationRuleRating": "MAJOR",
+        "relativeIntensityWeight": 0
+      },
+      {
+        "polarityType": "NEGATIVE",
+        "ionizationType": "FORMATE",
+        "lipidFragmentationRuleType": "HEADGROUP_FRAGMENT_NL",
+        "lipidFragmentInformationLevelType": "SPECIES_LEVEL",
+        "molecularFormula": "C7H14O8",
+        "lipidFragmentationRuleRating": "MAJOR",
+        "relativeIntensityWeight": 0
+      },
+      {
+        "polarityType": "NEGATIVE",
+        "ionizationType": "FORMATE",
+        "lipidFragmentationRuleType": "AMID_CHAIN_MINUS_FORMULA_FRAGMENT",
+        "lipidFragmentInformationLevelType": "MOLECULAR_SPECIES_LEVEL",
+        "molecularFormula": "NH4",
+        "lipidFragmentationRuleRating": "MAJOR",
+        "relativeIntensityWeight": 0
+      },
+      {
+        "polarityType": "NEGATIVE",
+        "ionizationType": "FORMATE",
+        "lipidFragmentationRuleType": "AMID_CHAIN_PLUS_FORMULA_FRAGMENT",
+        "lipidFragmentInformationLevelType": "MOLECULAR_SPECIES_LEVEL",
+        "molecularFormula": "C2H",
+        "lipidFragmentationRuleRating": "MAJOR",
+        "relativeIntensityWeight": 0
+      },
+      {
+        "polarityType": "NEGATIVE",
+        "ionizationType": "FORMATE",
+        "lipidFragmentationRuleType": "SPHINGOLIPID_DI_HYDROXY_BACKBONE_CHAIN_MINUS_FORMULA_FRAGMENT",
+        "lipidFragmentInformationLevelType": "MOLECULAR_SPECIES_LEVEL",
+        "molecularFormula": "C2H8NO",
+        "lipidFragmentationRuleRating": "MAJOR",
+        "relativeIntensityWeight": 0
+      }
+    ],
+    "_meta": {
+      "id": "hexosylceramides",
+      "source": "builtin",
+      "description": "Built-in mzmine lipid class HexCer. Use it as a template for your own classes.",
+      "authors": [
+        {
+          "name": "mzmine development team"
+        }
+      ],
+      "mzmineVersion": "4.11.2",
+      "license": "MIT",
+      "licenseUrl": "https://github.com/mzmine/mzmine/blob/master/LICENSE.txt"
+    }
+  }
+]

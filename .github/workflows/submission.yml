@@ -1,0 +1,74 @@
+name: Lipid class submission
+
+# Turns a submission issue into a pull request. Issue content is untrusted: it is only passed
+# through environment variables and parsed as data, never interpolated into shell code.
+on:
+  issues:
+    types: [opened, edited, labeled]
+
+permissions:
+  contents: write
+  pull-requests: write
+  issues: write
+
+concurrency:
+  group: submission-${{ github.event.issue.number }}
+  cancel-in-progress: true
+
+jobs:
+  submission:
+    if: contains(github.event.issue.labels.*.name, 'lipid-class-submission') && github.event.issue.state == 'open'
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ github.token }}
+      ISSUE_NUMBER: ${{ github.event.issue.number }}
+      ISSUE_BODY: ${{ github.event.issue.body }}
+      ISSUE_TITLE: ${{ github.event.issue.title }}
+      ISSUE_URL: ${{ github.event.issue.html_url }}
+      ISSUE_AUTHOR: ${{ github.event.issue.user.login }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Create and check class files
+        id: check
+        run: |
+          if python scripts/submission_from_issue.py; then
+            echo "valid=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "valid=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Report problems
+        if: steps.check.outputs.valid == 'false'
+        run: gh issue comment "$ISSUE_NUMBER" --body-file submission_report.md
+
+      - name: Open or update pull request
+        if: steps.check.outputs.valid == 'true'
+        run: |
+          branch="submission/issue-$ISSUE_NUMBER"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git switch -c "$branch"
+          xargs -a created_files.txt git add --
+          git commit -m "Add lipid class from #$ISSUE_NUMBER" -m "Submitted by @$ISSUE_AUTHOR"
+          git push --force origin "$branch"
+          {
+            cat submission_report.md
+            echo
+            echo "Closes #$ISSUE_NUMBER"
+          } > pr_body.md
+          if gh pr view "$branch" --json number > /dev/null 2>&1; then
+            gh pr edit "$branch" --body-file pr_body.md
+          else
+            gh pr create --head "$branch" --base main --title "$ISSUE_TITLE" --body-file pr_body.md --label lipid-class-submission
+          fi
+          pr_url=$(gh pr view "$branch" --json url --jq .url)
+          {
+            cat submission_report.md
+            echo
+            echo "Pull request for review: $pr_url"
+          } > comment.md
+          gh issue comment "$ISSUE_NUMBER" --body-file comment.md

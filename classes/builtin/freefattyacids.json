@@ -1,0 +1,36 @@
+[
+  {
+    "name": "Free fatty acids",
+    "abbr": "FA",
+    "coreClass": "FATTYACYLS",
+    "mainClass": "FATTYACIDSANDCONJUGATES",
+    "backBoneFormula": "H2O",
+    "chainTypes": [
+      "ACYL_CHAIN"
+    ],
+    "fragmentationRules": [
+      {
+        "polarityType": "NEGATIVE",
+        "ionizationType": "NEGATIVE_HYDROGEN",
+        "lipidFragmentationRuleType": "PRECURSOR",
+        "lipidFragmentInformationLevelType": "SPECIES_LEVEL",
+        "molecularFormula": "",
+        "lipidFragmentationRuleRating": "MAJOR",
+        "relativeIntensityWeight": 0
+      }
+    ],
+    "_meta": {
+      "id": "freefattyacids",
+      "source": "builtin",
+      "description": "Built-in mzmine lipid class FA. Use it as a template for your own classes.",
+      "authors": [
+        {
+          "name": "mzmine development team"
+        }
+      ],
+      "mzmineVersion": "4.11.2",
+      "license": "MIT",
+      "licenseUrl": "https://github.com/mzmine/mzmine/blob/master/LICENSE.txt"
+    }
+  }
+]

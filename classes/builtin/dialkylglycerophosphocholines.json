@@ -1,0 +1,34 @@
+[
+  {
+    "name": "Dialkylglycerophosphocholines",
+    "abbr": "PC",
+    "coreClass": "GLYCEROPHOSPHOLIPIDS",
+    "mainClass": "PHOSPHATIDYLCHOLINE",
+    "backBoneFormula": "C8H20O6PN",
+    "chainTypes": [
+      "ALKYL_CHAIN",
+      "ALKYL_CHAIN"
+    ],
+    "fragmentationRules": [
+      {
+        "polarityType": "POSITIVE",
+        "ionizationType": "POSITIVE_HYDROGEN",
+        "molecularFormula": "",
+        "relativeIntensityWeight": 0
+      }
+    ],
+    "_meta": {
+      "id": "dialkylglycerophosphocholines",
+      "source": "builtin",
+      "description": "Built-in mzmine lipid class PC. Use it as a template for your own classes.",
+      "authors": [
+        {
+          "name": "mzmine development team"
+        }
+      ],
+      "mzmineVersion": "4.11.2",
+      "license": "MIT",
+      "licenseUrl": "https://github.com/mzmine/mzmine/blob/master/LICENSE.txt"
+    }
+  }
+]

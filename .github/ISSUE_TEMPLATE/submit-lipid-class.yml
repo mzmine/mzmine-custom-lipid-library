@@ -1,0 +1,62 @@
+name: Submit a lipid class
+description: Share a custom lipid class you built and tested in mzmine.
+title: "[Lipid class] "
+labels: ["lipid-class-submission"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for sharing! In mzmine, open **Lipid annotation → Custom lipid classes**, select your class and use **Export…**. Paste the content of the exported `.json` file below.
+        After you submit, the class is checked automatically. If everything is fine, a pull request is opened for review by the maintainers. If something is wrong, you get a comment here — just edit this issue to fix it.
+  - type: textarea
+    id: class-json
+    attributes:
+      label: Lipid class JSON
+      description: Content of the file exported from mzmine. One or more classes.
+      render: json
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: What is this class, when should it be used, and how did you validate it?
+    validations:
+      required: true
+  - type: input
+    id: author
+    attributes:
+      label: Author name
+      description: Shown as author of the class.
+    validations:
+      required: true
+  - type: input
+    id: orcid
+    attributes:
+      label: ORCID (optional)
+      placeholder: 0000-0002-1825-0097
+  - type: textarea
+    id: references
+    attributes:
+      label: References (optional)
+      description: One per line, a DOI (10.xxxx/...) or a URL.
+  - type: input
+    id: instrument
+    attributes:
+      label: Tested on (optional)
+      description: Instrument, ionization and fragmentation method you used to test the class.
+      placeholder: Orbitrap Exploris 240, ESI, HCD 30
+  - type: input
+    id: tags
+    attributes:
+      label: Tags (optional)
+      description: Comma separated, e.g., polyol lipids, oxidized lipids
+  - type: checkboxes
+    id: agreement
+    attributes:
+      label: Contributor agreement
+      description: |
+        By submitting, you grant mzio GmbH exclusive rights to this class. You keep the right to use it for your own research and are named as author. Please read the [Contributor Agreement](https://github.com/mzmine/mzmine-custom-lipid-library/blob/main/CONTRIBUTOR_AGREEMENT.md) before submitting.
+      options:
+        - label: I have read and accept the Contributor Agreement and have the right to grant these rights.
+          required: true

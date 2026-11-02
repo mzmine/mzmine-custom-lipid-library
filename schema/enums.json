@@ -1,0 +1,514 @@
+{
+  "LipidCategories": [
+    "FATTYACYLS",
+    "GLYCEROLIPIDS",
+    "GLYCEROPHOSPHOLIPIDS",
+    "SPHINGOLIPIDS",
+    "STEROLLIPIDS",
+    "PRENOLLIPIDS",
+    "SACCHAROLIPIDS",
+    "POLYKETIDES"
+  ],
+  "LipidMainClasses": [
+    {
+      "category": "FATTYACYLS",
+      "label": "Fatty acids and Conjugates",
+      "name": "FATTYACIDSANDCONJUGATES"
+    },
+    {
+      "category": "FATTYACYLS",
+      "label": "Fatty amides",
+      "name": "FATTYAMIDES"
+    },
+    {
+      "category": "FATTYACYLS",
+      "label": "Fatty esters",
+      "name": "FATTYESTERS"
+    },
+    {
+      "category": "FATTYACYLS",
+      "label": "Rhamnolipids",
+      "name": "RHAMNOLIPIDS"
+    },
+    {
+      "category": "GLYCEROLIPIDS",
+      "label": "Monoradylglycerols",
+      "name": "MONORADYLGLYCEROLS"
+    },
+    {
+      "category": "GLYCEROLIPIDS",
+      "label": "Diradylglycerols",
+      "name": "DIRADYLGLYCEROLS"
+    },
+    {
+      "category": "GLYCEROLIPIDS",
+      "label": "Triradylglycerols",
+      "name": "TRIRADYLGLYCEROLS"
+    },
+    {
+      "category": "GLYCEROLIPIDS",
+      "label": "Glycosyldiacylglycerols",
+      "name": "GLYCOSYLDIACYLGLYCEROLS"
+    },
+    {
+      "category": "GLYCEROLIPIDS",
+      "label": "Glycosylmonoacylglycerols",
+      "name": "GLYCOSYLMONOACYLGLYCEROLS"
+    },
+    {
+      "category": "GLYCEROLIPIDS",
+      "label": "Other glycerolipids",
+      "name": "OTHERGLYCEROLIPIDS"
+    },
+    {
+      "category": "GLYCEROPHOSPHOLIPIDS",
+      "label": "Phosphatidylcholine",
+      "name": "PHOSPHATIDYLCHOLINE"
+    },
+    {
+      "category": "GLYCEROPHOSPHOLIPIDS",
+      "label": "Glycerophosphoethanolamines",
+      "name": "GLYCEROPHOSPHOETHANOLAMINES"
+    },
+    {
+      "category": "GLYCEROPHOSPHOLIPIDS",
+      "label": "Glycerophosphoserines",
+      "name": "GLYCEROPHOSPHOSERINES"
+    },
+    {
+      "category": "GLYCEROPHOSPHOLIPIDS",
+      "label": "Glycerophosphoglycerols",
+      "name": "GLYCEROPHOSPHOGLYCEROLS"
+    },
+    {
+      "category": "GLYCEROPHOSPHOLIPIDS",
+      "label": "Glycerophosphoglycerophosphates",
+      "name": "GLYCEROPHOSPHOGLYCEROPHOSPHATES"
+    },
+    {
+      "category": "GLYCEROPHOSPHOLIPIDS",
+      "label": "Glycerophosphoinositols",
+      "name": "GLYCEROPHOSPHOINOSITOLS"
+    },
+    {
+      "category": "GLYCEROPHOSPHOLIPIDS",
+      "label": "Glycerophosphoinositolglycans",
+      "name": "GLYCEROPHOSPHOINOSITOLGLYCANS"
+    },
+    {
+      "category": "GLYCEROPHOSPHOLIPIDS",
+      "label": "Glycerophosphates",
+      "name": "GLYCEROPHOSPHATES"
+    },
+    {
+      "category": "GLYCEROPHOSPHOLIPIDS",
+      "label": "Cardiolipin",
+      "name": "CARDIOLIPIN"
+    },
+    {
+      "category": "GLYCEROPHOSPHOLIPIDS",
+      "label": "CDP-Glycerols",
+      "name": "CDPGLYCEROLS"
+    },
+    {
+      "category": "SPHINGOLIPIDS",
+      "label": "Sphingoid bases",
+      "name": "SPHINGOIDBASES"
+    },
+    {
+      "category": "SPHINGOLIPIDS",
+      "label": "Ceramides",
+      "name": "CERAMIDES"
+    },
+    {
+      "category": "SPHINGOLIPIDS",
+      "label": "Neutral glycosphingolipids",
+      "name": "NEUTRALGLYCOSPHINGOLIPIDS"
+    },
+    {
+      "category": "SPHINGOLIPIDS",
+      "label": "Phosphosphingolipids",
+      "name": "PHOSPHOSPHINGOLIPIDS"
+    },
+    {
+      "category": "STEROLLIPIDS",
+      "label": "Sterols",
+      "name": "STEROLS"
+    }
+  ],
+  "LipidChainType": [
+    "ACYL_CHAIN",
+    "ACYL_MONO_HYDROXY_CHAIN",
+    "TWO_ACYL_CHAINS_COMBINED",
+    "ALKYL_CHAIN",
+    "AMID_CHAIN",
+    "AMID_MONO_HYDROXY_CHAIN",
+    "SPHINGOLIPID_MONO_HYDROXY_BACKBONE_CHAIN",
+    "SPHINGOLIPID_DI_HYDROXY_BACKBONE_CHAIN",
+    "SPHINGOLIPID_TRI_HYDROXY_BACKBONE_CHAIN"
+  ],
+  "LipidFragmentationRuleType": [
+    "HEADGROUP_FRAGMENT",
+    "HEADGROUP_FRAGMENT_NL",
+    "ACYLCHAIN_FRAGMENT",
+    "ACYLCHAIN_FRAGMENT_NL",
+    "ACYLCHAIN_PLUS_FORMULA_FRAGMENT",
+    "ACYLCHAIN_PLUS_FORMULA_FRAGMENT_NL",
+    "ACYLCHAIN_MINUS_FORMULA_FRAGMENT",
+    "ACYLCHAIN_MINUS_FORMULA_FRAGMENT_NL",
+    "ACYL_MONO_HYDROXY_CHAIN_FRAGMENT",
+    "ACYL_MONO_HYDROXY_CHAIN_FRAGMENT_NL",
+    "ACYL_MONO_HYDROXY_CHAIN_PLUS_FORMULA_FRAGMENT",
+    "ACYL_MONO_HYDROXY_CHAIN_PLUS_FORMULA_FRAGMENT_NL",
+    "ACYL_MONO_HYDROXY_CHAIN_MINUS_FORMULA_FRAGMENT",
+    "ACYL_MONO_HYDROXY_CHAIN_MINUS_FORMULA_FRAGMENT_NL",
+    "TWO_ACYLCHAINS_FRAGMENT",
+    "TWO_ACYLCHAINS_FRAGMENT_NL",
+    "TWO_ACYLCHAINS_PLUS_FORMULA_FRAGMENT",
+    "TWO_ACYLCHAINS_PLUS_FORMULA_FRAGMENT_NL",
+    "TWO_ACYLCHAINS_MINUS_FORMULA_FRAGMENT",
+    "TWO_ACYLCHAINS_MINUS_FORMULA_FRAGMENT_NL",
+    "ALKYLCHAIN_FRAGMENT",
+    "ALKYLCHAIN_FRAGMENT_NL",
+    "ALKYLCHAIN_PLUS_FORMULA_FRAGMENT",
+    "ALKYLCHAIN_PLUS_FORMULA_FRAGMENT_NL",
+    "ALKYLCHAIN_MINUS_FORMULA_FRAGMENT",
+    "ALKYLCHAIN_MINUS_FORMULA_FRAGMENT_NL",
+    "SPHINGOLIPID_MONO_HYDROXY_BACKBONE_CHAIN_FRAGMENT",
+    "SPHINGOLIPID_DI_HYDROXY_BACKBONE_CHAIN_FRAGMENT",
+    "SPHINGOLIPID_TRI_HYDROXY_BACKBONE_CHAIN_FRAGMENT",
+    "SPHINGOLIPID_MONO_HYDROXY_BACKBONE_CHAIN_FRAGMENT_NL",
+    "SPHINGOLIPID_DI_HYDROXY_BACKBONE_CHAIN_FRAGMENT_NL",
+    "SPHINGOLIPID_TRI_HYDROXY_BACKBONE_CHAIN_FRAGMENT_NL",
+    "SPHINGOLIPID_MONO_HYDROXY_BACKBONE_CHAIN_PLUS_FORMULA_FRAGMENT_NL",
+    "SPHINGOLIPID_DI_HYDROXY_BACKBONE_CHAIN_PLUS_FORMULA_FRAGMENT_NL",
+    "SPHINGOLIPID_TRI_HYDROXY_BACKBONE_CHAIN_PLUS_FORMULA_FRAGMENT_NL",
+    "SPHINGOLIPID_MONO_HYDROXY_BACKBONE_CHAIN_MINUS_FORMULA_FRAGMENT_NL",
+    "SPHINGOLIPID_DI_HYDROXY_BACKBONE_CHAIN_MINUS_FORMULA_FRAGMENT_NL",
+    "SPHINGOLIPID_TRI_HYDROXY_BACKBONE_CHAIN_MINUS_FORMULA_FRAGMENT_NL",
+    "SPHINGOLIPID_MONO_HYDROXY_BACKBONE_CHAIN_PLUS_FORMULA_FRAGMENT",
+    "SPHINGOLIPID_DI_HYDROXY_BACKBONE_CHAIN_PLUS_FORMULA_FRAGMENT",
+    "SPHINGOLIPID_TRI_HYDROXY_BACKBONE_CHAIN_PLUS_FORMULA_FRAGMENT",
+    "SPHINGOLIPID_MONO_HYDROXY_BACKBONE_CHAIN_MINUS_FORMULA_FRAGMENT",
+    "SPHINGOLIPID_DI_HYDROXY_BACKBONE_CHAIN_MINUS_FORMULA_FRAGMENT",
+    "SPHINGOLIPID_TRI_HYDROXY_BACKBONE_CHAIN_MINUS_FORMULA_FRAGMENT",
+    "AMID_CHAIN_FRAGMENT",
+    "AMID_CHAIN_FRAGMENT_NL",
+    "AMID_CHAIN_PLUS_FORMULA_FRAGMENT",
+    "AMID_CHAIN_PLUS_FORMULA_FRAGMENT_NL",
+    "AMID_CHAIN_MINUS_FORMULA_FRAGMENT",
+    "AMID_CHAIN_MINUS_FORMULA_FRAGMENT_NL",
+    "AMID_MONO_HYDROXY_CHAIN_FRAGMENT",
+    "AMID_MONO_HYDROXY_CHAIN_FRAGMENT_NL",
+    "AMID_MONO_HYDROXY_CHAIN_PLUS_FORMULA_FRAGMENT",
+    "AMID_MONO_HYDROXY_CHAIN_PLUS_FORMULA_FRAGMENT_NL",
+    "AMID_MONO_HYDROXY_CHAIN_MINUS_FORMULA_FRAGMENT",
+    "AMID_MONO_HYDROXY_CHAIN_MINUS_FORMULA_FRAGMENT_NL",
+    "PRECURSOR"
+  ],
+  "LipidAnnotationLevel": [
+    "SPECIES_LEVEL",
+    "MOLECULAR_SPECIES_LEVEL"
+  ],
+  "LipidFragmentationRuleRating": [
+    "MINOR",
+    "MAJOR"
+  ],
+  "IonizationType": [
+    {
+      "adduct": "No ionization",
+      "polarity": "NEUTRAL",
+      "name": "NO_IONIZATION"
+    },
+    {
+      "adduct": "[M]+",
+      "polarity": "POSITIVE",
+      "name": "POSITIVE"
+    },
+    {
+      "adduct": "[M+H]+",
+      "polarity": "POSITIVE",
+      "name": "POSITIVE_HYDROGEN"
+    },
+    {
+      "adduct": "[M+Na]+",
+      "polarity": "POSITIVE",
+      "name": "SODIUM"
+    },
+    {
+      "adduct": "[M+K]+",
+      "polarity": "POSITIVE",
+      "name": "POTASSIUM"
+    },
+    {
+      "adduct": "[M+Li]+",
+      "polarity": "POSITIVE",
+      "name": "LITHIUM"
+    },
+    {
+      "adduct": "[M+NH4]+",
+      "polarity": "POSITIVE",
+      "name": "AMMONIUM"
+    },
+    {
+      "adduct": "[M]3+",
+      "polarity": "POSITIVE",
+      "name": "NAME2"
+    },
+    {
+      "adduct": "[M]2+",
+      "polarity": "POSITIVE",
+      "name": "NAME3"
+    },
+    {
+      "adduct": "[M+H]2+",
+      "polarity": "POSITIVE",
+      "name": "NAME4"
+    },
+    {
+      "adduct": "[M+2H]2+",
+      "polarity": "POSITIVE",
+      "name": "NAME5"
+    },
+    {
+      "adduct": "[M+H+Na]2+",
+      "polarity": "POSITIVE",
+      "name": "NAME6"
+    },
+    {
+      "adduct": "[M+2H+Na]3+",
+      "polarity": "POSITIVE",
+      "name": "NAME7"
+    },
+    {
+      "adduct": "[M+H+K]2+",
+      "polarity": "POSITIVE",
+      "name": "NAME8"
+    },
+    {
+      "adduct": "[M+2Na]2+",
+      "polarity": "POSITIVE",
+      "name": "NAME9"
+    },
+    {
+      "adduct": "[M+H+2Na]3+",
+      "polarity": "POSITIVE",
+      "name": "NAME10"
+    },
+    {
+      "adduct": "[M+3Na]3+",
+      "polarity": "POSITIVE",
+      "name": "NAME11"
+    },
+    {
+      "adduct": "[M+H-H2O]+",
+      "polarity": "POSITIVE",
+      "name": "NAME13"
+    },
+    {
+      "adduct": "[M+H-NH3]+",
+      "polarity": "POSITIVE",
+      "name": "NAME15"
+    },
+    {
+      "adduct": "[M-H+2Na]+",
+      "polarity": "POSITIVE",
+      "name": "NAME16"
+    },
+    {
+      "adduct": "[M-2H+3Na]+",
+      "polarity": "POSITIVE",
+      "name": "NAME18"
+    },
+    {
+      "adduct": "[M+H+H2O]+",
+      "polarity": "POSITIVE",
+      "name": "NAME19"
+    },
+    {
+      "adduct": "[M-H+2K]+",
+      "polarity": "POSITIVE",
+      "name": "NAME22"
+    },
+    {
+      "adduct": "[M+H2O]+",
+      "polarity": "POSITIVE",
+      "name": "NAME23"
+    },
+    {
+      "adduct": "[M+H-OH]+",
+      "polarity": "POSITIVE",
+      "name": "NAME24"
+    },
+    {
+      "adduct": "[M-H2O]+",
+      "polarity": "POSITIVE",
+      "name": "NAME25"
+    },
+    {
+      "adduct": "[M-H]+",
+      "polarity": "POSITIVE",
+      "name": "NAME26"
+    },
+    {
+      "adduct": "[M+Na-H2O]+",
+      "polarity": "POSITIVE",
+      "name": "NAME27"
+    },
+    {
+      "adduct": "[M-2H+3K]+",
+      "polarity": "POSITIVE",
+      "name": "NAME28"
+    },
+    {
+      "adduct": "[M+K-H2O]+",
+      "polarity": "POSITIVE",
+      "name": "NAME29"
+    },
+    {
+      "adduct": "[M-CO2H+H]+",
+      "polarity": "POSITIVE",
+      "name": "NAME30"
+    },
+    {
+      "adduct": "[2M+H]+",
+      "polarity": "POSITIVE",
+      "name": "NAME32"
+    },
+    {
+      "adduct": "[2M+Na]+",
+      "polarity": "POSITIVE",
+      "name": "NAME37"
+    },
+    {
+      "adduct": "[2M+Na-H2O]+",
+      "polarity": "POSITIVE",
+      "name": "NAME34"
+    },
+    {
+      "adduct": "[2M+K-H2O]+",
+      "polarity": "POSITIVE",
+      "name": "NAME35"
+    },
+    {
+      "adduct": "[2M+K]+",
+      "polarity": "POSITIVE",
+      "name": "NAME38"
+    },
+    {
+      "adduct": "[3M+H]+",
+      "polarity": "POSITIVE",
+      "name": "NAME33"
+    },
+    {
+      "adduct": "[3M+K]+",
+      "polarity": "POSITIVE",
+      "name": "NAME39"
+    },
+    {
+      "adduct": "[3M+K-H2O]+",
+      "polarity": "POSITIVE",
+      "name": "NAME36"
+    },
+    {
+      "adduct": "[3M+H-H2O]+",
+      "polarity": "POSITIVE",
+      "name": "NAME31"
+    },
+    {
+      "adduct": "[M]-",
+      "polarity": "NEGATIVE",
+      "name": "NEGATIVE"
+    },
+    {
+      "adduct": "[M-H]-",
+      "polarity": "NEGATIVE",
+      "name": "NEGATIVE_HYDROGEN"
+    },
+    {
+      "adduct": "[M+Na-3H]2-",
+      "polarity": "NEGATIVE",
+      "name": "NAME_2"
+    },
+    {
+      "adduct": "[M+CO3]-",
+      "polarity": "NEGATIVE",
+      "name": "CARBONATE"
+    },
+    {
+      "adduct": "[M+HCOO]-",
+      "polarity": "NEGATIVE",
+      "name": "FORMATE"
+    },
+    {
+      "adduct": "[M+H2PO4]-",
+      "polarity": "NEGATIVE",
+      "name": "PHOSPHATE"
+    },
+    {
+      "adduct": "[M+CH3COO]-",
+      "polarity": "NEGATIVE",
+      "name": "ACETATE"
+    },
+    {
+      "adduct": "[M+CF3COO]-",
+      "polarity": "NEGATIVE",
+      "name": "TRIFLUORACETATE"
+    },
+    {
+      "adduct": "[M+Cl]-",
+      "polarity": "NEGATIVE",
+      "name": "CHLORIDE"
+    },
+    {
+      "adduct": "[M+Br]-",
+      "polarity": "NEGATIVE",
+      "name": "BROMIDE"
+    },
+    {
+      "adduct": "[M-2H]2-",
+      "polarity": "NEGATIVE",
+      "name": "NAME_1"
+    },
+    {
+      "adduct": "[M-H-H2O]-",
+      "polarity": "NEGATIVE",
+      "name": "NAME_4"
+    },
+    {
+      "adduct": "[M-H-NH3]-",
+      "polarity": "NEGATIVE",
+      "name": "NAME_5"
+    },
+    {
+      "adduct": "[M-H+H2O]-",
+      "polarity": "NEGATIVE",
+      "name": "NAME_6"
+    },
+    {
+      "adduct": "[M-2H]-",
+      "polarity": "NEGATIVE",
+      "name": "NAME_7"
+    },
+    {
+      "adduct": "[M+K-2H]-",
+      "polarity": "NEGATIVE",
+      "name": "NAME_8"
+    },
+    {
+      "adduct": "[M+Na-2H]-",
+      "polarity": "NEGATIVE",
+      "name": "NAME_9"
+    },
+    {
+      "adduct": "[2M-H]-",
+      "polarity": "NEGATIVE",
+      "name": "NAME_10"
+    },
+    {
+      "adduct": "[3M-H]-",
+      "polarity": "NEGATIVE",
+      "name": "NAME_11"
+    }
+  ]
+}

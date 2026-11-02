@@ -1,0 +1,55 @@
+[
+  {
+    "name": "Sulfono-di-hydroxy sphingolipid",
+    "abbr": "SL",
+    "coreClass": "SPHINGOLIPIDS",
+    "mainClass": "SPHINGOIDBASES",
+    "backBoneFormula": "C3H8SO3",
+    "chainTypes": [
+      "SPHINGOLIPID_DI_HYDROXY_BACKBONE_CHAIN",
+      "AMID_CHAIN"
+    ],
+    "fragmentationRules": [
+      {
+        "polarityType": "POSITIVE",
+        "ionizationType": "POSITIVE_HYDROGEN",
+        "lipidFragmentationRuleType": "HEADGROUP_FRAGMENT",
+        "lipidFragmentInformationLevelType": "SPECIES_LEVEL",
+        "molecularFormula": "C2H6NO3S+",
+        "lipidFragmentationRuleRating": "MAJOR",
+        "relativeIntensityWeight": 30
+      },
+      {
+        "polarityType": "POSITIVE",
+        "ionizationType": "POSITIVE_HYDROGEN",
+        "lipidFragmentationRuleType": "HEADGROUP_FRAGMENT_NL",
+        "lipidFragmentInformationLevelType": "SPECIES_LEVEL",
+        "molecularFormula": "H2O",
+        "lipidFragmentationRuleRating": "MINOR",
+        "relativeIntensityWeight": 10
+      },
+      {
+        "polarityType": "POSITIVE",
+        "ionizationType": "POSITIVE_HYDROGEN",
+        "lipidFragmentationRuleType": "AMID_CHAIN_MINUS_FORMULA_FRAGMENT_NL",
+        "lipidFragmentInformationLevelType": "SPECIES_LEVEL",
+        "molecularFormula": "NH3",
+        "lipidFragmentationRuleRating": "MAJOR",
+        "relativeIntensityWeight": 0
+      }
+    ],
+    "_meta": {
+      "id": "sulfonolipiddihydroxy",
+      "source": "builtin",
+      "description": "Built-in mzmine lipid class SL. Use it as a template for your own classes.",
+      "authors": [
+        {
+          "name": "mzmine development team"
+        }
+      ],
+      "mzmineVersion": "4.11.2",
+      "license": "MIT",
+      "licenseUrl": "https://github.com/mzmine/mzmine/blob/master/LICENSE.txt"
+    }
+  }
+]

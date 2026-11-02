@@ -1,0 +1,34 @@
+[
+  {
+    "name": "Alkylacylglycerophosphates",
+    "abbr": "PA",
+    "coreClass": "GLYCEROPHOSPHOLIPIDS",
+    "mainClass": "GLYCEROPHOSPHATES",
+    "backBoneFormula": "C3H9O6P",
+    "chainTypes": [
+      "ALKYL_CHAIN",
+      "ACYL_CHAIN"
+    ],
+    "fragmentationRules": [
+      {
+        "polarityType": "NEGATIVE",
+        "ionizationType": "NEGATIVE_HYDROGEN",
+        "molecularFormula": "",
+        "relativeIntensityWeight": 0
+      }
+    ],
+    "_meta": {
+      "id": "alkylacylglycerophosphates",
+      "source": "builtin",
+      "description": "Built-in mzmine lipid class PA. Use it as a template for your own classes.",
+      "authors": [
+        {
+          "name": "mzmine development team"
+        }
+      ],
+      "mzmineVersion": "4.11.2",
+      "license": "MIT",
+      "licenseUrl": "https://github.com/mzmine/mzmine/blob/master/LICENSE.txt"
+    }
+  }
+]

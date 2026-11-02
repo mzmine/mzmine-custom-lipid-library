@@ -1,0 +1,34 @@
+[
+  {
+    "name": "Dialkylglycerols",
+    "abbr": "DG",
+    "coreClass": "GLYCEROLIPIDS",
+    "mainClass": "DIRADYLGLYCEROLS",
+    "backBoneFormula": "C3H8O3",
+    "chainTypes": [
+      "ALKYL_CHAIN",
+      "ALKYL_CHAIN"
+    ],
+    "fragmentationRules": [
+      {
+        "polarityType": "POSITIVE",
+        "ionizationType": "AMMONIUM",
+        "molecularFormula": "",
+        "relativeIntensityWeight": 0
+      }
+    ],
+    "_meta": {
+      "id": "dialkylglycerols",
+      "source": "builtin",
+      "description": "Built-in mzmine lipid class DG. Use it as a template for your own classes.",
+      "authors": [
+        {
+          "name": "mzmine development team"
+        }
+      ],
+      "mzmineVersion": "4.11.2",
+      "license": "MIT",
+      "licenseUrl": "https://github.com/mzmine/mzmine/blob/master/LICENSE.txt"
+    }
+  }
+]

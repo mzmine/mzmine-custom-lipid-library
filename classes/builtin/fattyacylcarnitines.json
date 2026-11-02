@@ -1,0 +1,36 @@
+[
+  {
+    "name": "Fatty acyl carnitines",
+    "abbr": "CAR",
+    "coreClass": "FATTYACYLS",
+    "mainClass": "FATTYESTERS",
+    "backBoneFormula": "C7H16NO3",
+    "chainTypes": [
+      "ACYL_CHAIN"
+    ],
+    "fragmentationRules": [
+      {
+        "polarityType": "POSITIVE",
+        "ionizationType": "POSITIVE",
+        "lipidFragmentationRuleType": "HEADGROUP_FRAGMENT",
+        "lipidFragmentInformationLevelType": "SPECIES_LEVEL",
+        "molecularFormula": "C4H5O2+",
+        "lipidFragmentationRuleRating": "MAJOR",
+        "relativeIntensityWeight": 0
+      }
+    ],
+    "_meta": {
+      "id": "fattyacylcarnitines",
+      "source": "builtin",
+      "description": "Built-in mzmine lipid class CAR. Use it as a template for your own classes.",
+      "authors": [
+        {
+          "name": "mzmine development team"
+        }
+      ],
+      "mzmineVersion": "4.11.2",
+      "license": "MIT",
+      "licenseUrl": "https://github.com/mzmine/mzmine/blob/master/LICENSE.txt"
+    }
+  }
+]

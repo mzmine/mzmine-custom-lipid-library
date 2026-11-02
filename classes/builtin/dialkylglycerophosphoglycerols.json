@@ -1,0 +1,34 @@
+[
+  {
+    "name": "Dialkylglycerophosphoglycerols",
+    "abbr": "PG",
+    "coreClass": "GLYCEROPHOSPHOLIPIDS",
+    "mainClass": "GLYCEROPHOSPHOGLYCEROLS",
+    "backBoneFormula": "C6H15O8P",
+    "chainTypes": [
+      "ALKYL_CHAIN",
+      "ALKYL_CHAIN"
+    ],
+    "fragmentationRules": [
+      {
+        "polarityType": "NEGATIVE",
+        "ionizationType": "NEGATIVE_HYDROGEN",
+        "molecularFormula": "",
+        "relativeIntensityWeight": 0
+      }
+    ],
+    "_meta": {
+      "id": "dialkylglycerophosphoglycerols",
+      "source": "builtin",
+      "description": "Built-in mzmine lipid class PG. Use it as a template for your own classes.",
+      "authors": [
+        {
+          "name": "mzmine development team"
+        }
+      ],
+      "mzmineVersion": "4.11.2",
+      "license": "MIT",
+      "licenseUrl": "https://github.com/mzmine/mzmine/blob/master/LICENSE.txt"
+    }
+  }
+]

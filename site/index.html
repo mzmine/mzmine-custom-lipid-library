@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>mzmine custom lipid library</title>
+  <meta name="description" content="Browse, download and share custom lipid classes for lipid annotation in mzmine.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap header-row">
+    <div>
+      <h1>mzmine custom lipid library</h1>
+      <p class="lede">Custom lipid classes for rule-based lipid annotation in mzmine, shared by the
+        community. Download them and import them in mzmine.</p>
+    </div>
+    <nav class="header-links">
+      <a class="btn" href="#/help">How to use</a>
+      <a class="btn primary" id="submit-link" href="#">Submit a class</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <section id="help" class="help" hidden>
+    <h2>How to use these classes in mzmine</h2>
+    <ol>
+      <li>Download one class, or select several and download them as one file.</li>
+      <li>In mzmine, open <b>Lipid annotation</b> → <b>Custom lipid classes</b> → <b>Import…</b>
+        and choose the downloaded <code>.json</code> file.</li>
+      <li>Check the classes you want to search for and run the annotation.</li>
+    </ol>
+    <h2>Share your own class</h2>
+    <ol>
+      <li>Build and test your class in mzmine, then use <b>Export…</b> to save it as
+        <code>.json</code>.</li>
+      <li>Open a <a id="submit-link-2" href="#">submission</a>, paste the file and describe the
+        class. The repository checks the class automatically and a maintainer reviews it.</li>
+      <li>You keep the right to use your class for your own research and are named as its author.</li>
+    </ol>
+    <p>Built-in classes are the classes that ship with mzmine. They are listed as templates to
+      build your own classes from.</p>
+    <h2>Terms of use</h2>
+    <p>Community classes and the library are owned by mzio GmbH. You may download them, use them in
+      mzmine to analyze your data and publish your results. Redistributing the classes or using them
+      in other tools needs permission. See the <a class="terms-link" href="#">terms of use</a>.
+      Contributors grant mzio GmbH exclusive rights to their classes and are credited as authors
+      (<a id="cla-link" href="#">Contributor Agreement</a>).</p>
+    <p><a href="#/">← Back to the catalog</a></p>
+  </section>
+
+  <section id="catalog">
+    <div class="toolbar" role="search">
+      <input id="search" type="search" placeholder="Search name, abbreviation, formula, author…"
+             aria-label="Search lipid classes">
+      <div class="filters">
+        <select id="f-source" aria-label="Source">
+          <option value="">All sources</option>
+          <option value="community">Community</option>
+          <option value="builtin">Built-in (mzmine)</option>
+        </select>
+        <select id="f-category" aria-label="Lipid category">
+          <option value="">All categories</option>
+        </select>
+        <select id="f-polarity" aria-label="Polarity">
+          <option value="">Both polarities</option>
+          <option value="POSITIVE">Positive mode</option>
+          <option value="NEGATIVE">Negative mode</option>
+        </select>
+      </div>
+    </div>
+    <p id="count" class="muted" aria-live="polite"></p>
+    <ul id="list" class="class-list"></ul>
+    <p id="empty" class="empty" hidden>No lipid class matches your filters.</p>
+  </section>
+
+  <section id="detail" hidden></section>
+</main>
+
+<div id="selection-bar" class="selection-bar" hidden>
+  <div class="wrap selection-row">
+    <span id="selection-count"></span>
+    <span class="spacer"></span>
+    <button class="btn" id="clear-selection" type="button">Clear</button>
+    <button class="btn primary" id="download-selection" type="button">Download for mzmine</button>
+  </div>
+</div>
+
+<footer class="wrap footer muted">
+  Community classes © mzio GmbH · <a class="terms-link" href="#">Terms of use</a> ·
+  <span id="generated"></span> ·
+  <a id="repo-link" href="#">Source and data on GitHub</a> ·
+  <a href="bundles/community.json" download>All community classes</a>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>

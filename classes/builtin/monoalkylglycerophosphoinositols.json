@@ -1,0 +1,33 @@
+[
+  {
+    "name": "Monoalkylglycerophosphoinositols",
+    "abbr": "LPI",
+    "coreClass": "GLYCEROPHOSPHOLIPIDS",
+    "mainClass": "GLYCEROPHOSPHOINOSITOLS",
+    "backBoneFormula": "C9H19PO11",
+    "chainTypes": [
+      "ALKYL_CHAIN"
+    ],
+    "fragmentationRules": [
+      {
+        "polarityType": "NEGATIVE",
+        "ionizationType": "NEGATIVE_HYDROGEN",
+        "molecularFormula": "",
+        "relativeIntensityWeight": 0
+      }
+    ],
+    "_meta": {
+      "id": "monoalkylglycerophosphoinositols",
+      "source": "builtin",
+      "description": "Built-in mzmine lipid class LPI. Use it as a template for your own classes.",
+      "authors": [
+        {
+          "name": "mzmine development team"
+        }
+      ],
+      "mzmineVersion": "4.11.2",
+      "license": "MIT",
+      "licenseUrl": "https://github.com/mzmine/mzmine/blob/master/LICENSE.txt"
+    }
+  }
+]

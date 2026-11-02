@@ -1,0 +1,347 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "mzmine custom lipid class file",
+  "description": "A JSON list with one lipid class as exported by mzmine, plus a _meta block that mzmine ignores on import.",
+  "type": "array",
+  "minItems": 1,
+  "maxItems": 1,
+  "items": {
+    "type": "object",
+    "required": [
+      "name",
+      "abbr",
+      "coreClass",
+      "mainClass",
+      "backBoneFormula",
+      "chainTypes",
+      "fragmentationRules"
+    ],
+    "properties": {
+      "name": {
+        "type": "string",
+        "minLength": 1
+      },
+      "abbr": {
+        "type": "string",
+        "minLength": 1
+      },
+      "coreClass": {
+        "enum": [
+          "FATTYACYLS",
+          "GLYCEROLIPIDS",
+          "GLYCEROPHOSPHOLIPIDS",
+          "SPHINGOLIPIDS",
+          "STEROLLIPIDS",
+          "PRENOLLIPIDS",
+          "SACCHAROLIPIDS",
+          "POLYKETIDES"
+        ]
+      },
+      "mainClass": {
+        "enum": [
+          "FATTYACIDSANDCONJUGATES",
+          "FATTYAMIDES",
+          "FATTYESTERS",
+          "RHAMNOLIPIDS",
+          "MONORADYLGLYCEROLS",
+          "DIRADYLGLYCEROLS",
+          "TRIRADYLGLYCEROLS",
+          "GLYCOSYLDIACYLGLYCEROLS",
+          "GLYCOSYLMONOACYLGLYCEROLS",
+          "OTHERGLYCEROLIPIDS",
+          "PHOSPHATIDYLCHOLINE",
+          "GLYCEROPHOSPHOETHANOLAMINES",
+          "GLYCEROPHOSPHOSERINES",
+          "GLYCEROPHOSPHOGLYCEROLS",
+          "GLYCEROPHOSPHOGLYCEROPHOSPHATES",
+          "GLYCEROPHOSPHOINOSITOLS",
+          "GLYCEROPHOSPHOINOSITOLGLYCANS",
+          "GLYCEROPHOSPHATES",
+          "CARDIOLIPIN",
+          "CDPGLYCEROLS",
+          "SPHINGOIDBASES",
+          "CERAMIDES",
+          "NEUTRALGLYCOSPHINGOLIPIDS",
+          "PHOSPHOSPHINGOLIPIDS",
+          "STEROLS"
+        ]
+      },
+      "backBoneFormula": {
+        "type": "string",
+        "minLength": 1
+      },
+      "chainTypes": {
+        "type": "array",
+        "items": {
+          "enum": [
+            "ACYL_CHAIN",
+            "ACYL_MONO_HYDROXY_CHAIN",
+            "TWO_ACYL_CHAINS_COMBINED",
+            "ALKYL_CHAIN",
+            "AMID_CHAIN",
+            "AMID_MONO_HYDROXY_CHAIN",
+            "SPHINGOLIPID_MONO_HYDROXY_BACKBONE_CHAIN",
+            "SPHINGOLIPID_DI_HYDROXY_BACKBONE_CHAIN",
+            "SPHINGOLIPID_TRI_HYDROXY_BACKBONE_CHAIN"
+          ]
+        }
+      },
+      "fragmentationRules": {
+        "type": "array",
+        "minItems": 1,
+        "items": {
+          "type": "object",
+          "required": [
+            "polarityType",
+            "ionizationType"
+          ],
+          "properties": {
+            "polarityType": {
+              "enum": [
+                "POSITIVE",
+                "NEGATIVE"
+              ]
+            },
+            "ionizationType": {
+              "enum": [
+                "NO_IONIZATION",
+                "POSITIVE",
+                "POSITIVE_HYDROGEN",
+                "SODIUM",
+                "POTASSIUM",
+                "LITHIUM",
+                "AMMONIUM",
+                "NAME2",
+                "NAME3",
+                "NAME4",
+                "NAME5",
+                "NAME6",
+                "NAME7",
+                "NAME8",
+                "NAME9",
+                "NAME10",
+                "NAME11",
+                "NAME13",
+                "NAME15",
+                "NAME16",
+                "NAME18",
+                "NAME19",
+                "NAME22",
+                "NAME23",
+                "NAME24",
+                "NAME25",
+                "NAME26",
+                "NAME27",
+                "NAME28",
+                "NAME29",
+                "NAME30",
+                "NAME32",
+                "NAME37",
+                "NAME34",
+                "NAME35",
+                "NAME38",
+                "NAME33",
+                "NAME39",
+                "NAME36",
+                "NAME31",
+                "NEGATIVE",
+                "NEGATIVE_HYDROGEN",
+                "NAME_2",
+                "CARBONATE",
+                "FORMATE",
+                "PHOSPHATE",
+                "ACETATE",
+                "TRIFLUORACETATE",
+                "CHLORIDE",
+                "BROMIDE",
+                "NAME_1",
+                "NAME_4",
+                "NAME_5",
+                "NAME_6",
+                "NAME_7",
+                "NAME_8",
+                "NAME_9",
+                "NAME_10",
+                "NAME_11"
+              ]
+            },
+            "lipidFragmentationRuleType": {
+              "enum": [
+                "HEADGROUP_FRAGMENT",
+                "HEADGROUP_FRAGMENT_NL",
+                "ACYLCHAIN_FRAGMENT",
+                "ACYLCHAIN_FRAGMENT_NL",
+                "ACYLCHAIN_PLUS_FORMULA_FRAGMENT",
+                "ACYLCHAIN_PLUS_FORMULA_FRAGMENT_NL",
+                "ACYLCHAIN_MINUS_FORMULA_FRAGMENT",
+                "ACYLCHAIN_MINUS_FORMULA_FRAGMENT_NL",
+                "ACYL_MONO_HYDROXY_CHAIN_FRAGMENT",
+                "ACYL_MONO_HYDROXY_CHAIN_FRAGMENT_NL",
+                "ACYL_MONO_HYDROXY_CHAIN_PLUS_FORMULA_FRAGMENT",
+                "ACYL_MONO_HYDROXY_CHAIN_PLUS_FORMULA_FRAGMENT_NL",
+                "ACYL_MONO_HYDROXY_CHAIN_MINUS_FORMULA_FRAGMENT",
+                "ACYL_MONO_HYDROXY_CHAIN_MINUS_FORMULA_FRAGMENT_NL",
+                "TWO_ACYLCHAINS_FRAGMENT",
+                "TWO_ACYLCHAINS_FRAGMENT_NL",
+                "TWO_ACYLCHAINS_PLUS_FORMULA_FRAGMENT",
+                "TWO_ACYLCHAINS_PLUS_FORMULA_FRAGMENT_NL",
+                "TWO_ACYLCHAINS_MINUS_FORMULA_FRAGMENT",
+                "TWO_ACYLCHAINS_MINUS_FORMULA_FRAGMENT_NL",
+                "ALKYLCHAIN_FRAGMENT",
+                "ALKYLCHAIN_FRAGMENT_NL",
+                "ALKYLCHAIN_PLUS_FORMULA_FRAGMENT",
+                "ALKYLCHAIN_PLUS_FORMULA_FRAGMENT_NL",
+                "ALKYLCHAIN_MINUS_FORMULA_FRAGMENT",
+                "ALKYLCHAIN_MINUS_FORMULA_FRAGMENT_NL",
+                "SPHINGOLIPID_MONO_HYDROXY_BACKBONE_CHAIN_FRAGMENT",
+                "SPHINGOLIPID_DI_HYDROXY_BACKBONE_CHAIN_FRAGMENT",
+                "SPHINGOLIPID_TRI_HYDROXY_BACKBONE_CHAIN_FRAGMENT",
+                "SPHINGOLIPID_MONO_HYDROXY_BACKBONE_CHAIN_FRAGMENT_NL",
+                "SPHINGOLIPID_DI_HYDROXY_BACKBONE_CHAIN_FRAGMENT_NL",
+                "SPHINGOLIPID_TRI_HYDROXY_BACKBONE_CHAIN_FRAGMENT_NL",
+                "SPHINGOLIPID_MONO_HYDROXY_BACKBONE_CHAIN_PLUS_FORMULA_FRAGMENT_NL",
+                "SPHINGOLIPID_DI_HYDROXY_BACKBONE_CHAIN_PLUS_FORMULA_FRAGMENT_NL",
+                "SPHINGOLIPID_TRI_HYDROXY_BACKBONE_CHAIN_PLUS_FORMULA_FRAGMENT_NL",
+                "SPHINGOLIPID_MONO_HYDROXY_BACKBONE_CHAIN_MINUS_FORMULA_FRAGMENT_NL",
+                "SPHINGOLIPID_DI_HYDROXY_BACKBONE_CHAIN_MINUS_FORMULA_FRAGMENT_NL",
+                "SPHINGOLIPID_TRI_HYDROXY_BACKBONE_CHAIN_MINUS_FORMULA_FRAGMENT_NL",
+                "SPHINGOLIPID_MONO_HYDROXY_BACKBONE_CHAIN_PLUS_FORMULA_FRAGMENT",
+                "SPHINGOLIPID_DI_HYDROXY_BACKBONE_CHAIN_PLUS_FORMULA_FRAGMENT",
+                "SPHINGOLIPID_TRI_HYDROXY_BACKBONE_CHAIN_PLUS_FORMULA_FRAGMENT",
+                "SPHINGOLIPID_MONO_HYDROXY_BACKBONE_CHAIN_MINUS_FORMULA_FRAGMENT",
+                "SPHINGOLIPID_DI_HYDROXY_BACKBONE_CHAIN_MINUS_FORMULA_FRAGMENT",
+                "SPHINGOLIPID_TRI_HYDROXY_BACKBONE_CHAIN_MINUS_FORMULA_FRAGMENT",
+                "AMID_CHAIN_FRAGMENT",
+                "AMID_CHAIN_FRAGMENT_NL",
+                "AMID_CHAIN_PLUS_FORMULA_FRAGMENT",
+                "AMID_CHAIN_PLUS_FORMULA_FRAGMENT_NL",
+                "AMID_CHAIN_MINUS_FORMULA_FRAGMENT",
+                "AMID_CHAIN_MINUS_FORMULA_FRAGMENT_NL",
+                "AMID_MONO_HYDROXY_CHAIN_FRAGMENT",
+                "AMID_MONO_HYDROXY_CHAIN_FRAGMENT_NL",
+                "AMID_MONO_HYDROXY_CHAIN_PLUS_FORMULA_FRAGMENT",
+                "AMID_MONO_HYDROXY_CHAIN_PLUS_FORMULA_FRAGMENT_NL",
+                "AMID_MONO_HYDROXY_CHAIN_MINUS_FORMULA_FRAGMENT",
+                "AMID_MONO_HYDROXY_CHAIN_MINUS_FORMULA_FRAGMENT_NL",
+                "PRECURSOR"
+              ]
+            },
+            "lipidFragmentInformationLevelType": {
+              "enum": [
+                "SPECIES_LEVEL",
+                "MOLECULAR_SPECIES_LEVEL"
+              ]
+            },
+            "molecularFormula": {
+              "type": "string",
+              "description": "Formula of the rule. Chain plus/minus formula rules also accept signed formulas like +O2-H2."
+            },
+            "lipidFragmentationRuleRating": {
+              "enum": [
+                "MINOR",
+                "MAJOR"
+              ]
+            },
+            "relativeIntensityWeight": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 100
+            }
+          }
+        }
+      },
+      "_meta": {
+        "type": "object",
+        "required": [
+          "id",
+          "description",
+          "authors"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"
+          },
+          "source": {
+            "enum": [
+              "community",
+              "builtin"
+            ]
+          },
+          "version": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string",
+            "minLength": 1
+          },
+          "authors": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "object",
+              "required": [
+                "name"
+              ],
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "orcid": {
+                  "type": "string"
+                },
+                "github": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "references": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "doi": {
+                  "type": "string"
+                },
+                "url": {
+                  "type": "string"
+                },
+                "citation": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "instrument": {
+            "type": "string"
+          },
+          "tags": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "minMzmineVersion": {
+            "type": "string"
+          },
+          "submission": {
+            "type": "string"
+          },
+          "rightsHolder": {
+            "type": "string"
+          },
+          "license": {
+            "type": "string"
+          },
+          "licenseUrl": {
+            "type": "string"
+          },
+          "contributorAgreement": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}
